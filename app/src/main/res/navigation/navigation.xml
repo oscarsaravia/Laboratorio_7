@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.android.lab4v2.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_invitedFragment"
+            app:destination="@id/invitedFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_roleFragment"
+            app:destination="@id/roleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/check_button"
+        android:name="com.example.android.lab4v2.AboutFragment"
+        android:label="@string/about" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.android.lab4v2.game.gameFragment"
+        android:label="gameFragment" >
+        <action
+            android:id="@+id/action_gameFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="invitados"
+            app:argType="string"
+            android:defaultValue="Invitados" />
+        <action
+            android:id="@+id/action_gameFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.android.lab4v2.results.ResultsFragment"
+        android:label="ResultsFragment" >
+        <action
+            android:id="@+id/action_resultsFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="invitados"
+            app:argType="integer"
+            android:defaultValue="10" />
+        <argument
+            android:name="registrados"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/invitedFragment"
+        android:name="com.example.android.lab4v2.InvitedFragment"
+        android:label="fragment_invited"
+        tools:layout="@layout/fragment_invited" >
+        <action
+            android:id="@+id/action_invitedFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.android.lab4v2.AddFragment"
+        android:label="AddFragment" >
+        <action
+            android:id="@+id/action_addFragment_to_invitedFragment"
+            app:destination="@id/invitedFragment"
+            app:popUpTo="@id/invitedFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/roleFragment"
+        android:name="com.example.android.lab4v2.roles.RoleFragment"
+        android:label="RoleFragment" >
+        <action
+            android:id="@+id/action_roleFragment_to_addroleFragment"
+            app:destination="@id/addroleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addroleFragment"
+        android:name="com.example.android.lab4v2.roles.AddroleFragment"
+        android:label="AddroleFragment" >
+        <action
+            android:id="@+id/action_addroleFragment_to_roleFragment"
+            app:destination="@id/roleFragment"
+            app:popUpTo="@id/roleFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

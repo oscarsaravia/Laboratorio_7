@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/invitedFragment"
+        android:icon="@drawable/ic_supervisor_account_black_24dp"
+        android:title="@string/invited" />
+    <item
+        android:id="@+id/roleFragment"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="@string/roles"
+        />
+    <item
+        android:id="@+id/check_button"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/about" />
+</menu>

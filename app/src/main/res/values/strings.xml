@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Zvent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Acerca de la aplicación</string>
+    <string name="invited">Invitados</string>
+    <string name="roles">Roles</string>
+    <string name="descripcion">Esta aplicacion fue creada con el proposito de poder verificar la asistencia de las personas invitadas a un evento,</string>
+    <string name="home">Inicio</string>
+    <string name="nombre">Default</string>
+    <string name="telefono">default</string>
+    <string name="regis">Registro</string>
+    <string name="invitados">Invitados</string>
+    <string name="registrados">Registrados:</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="ver">Ver Invitados</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="addName">Ingrese el nombre</string>
+    <string name="addPhone">Ingrese el telefono</string>
+    <string name="addMail">Ingrese el correo electronico</string>
+    <string name="nameinput">Ingrese el nombre</string>
+    <string name="description">Ingrese la descripción</string>
+    <string name="selectorder">Seleccione un orden</string>
+    <string name="selectorder2">Por favor seleccione un orden</string>
+    <string-array name="roles_array">
+        <item>Anfitrion</item>
+        <item>Organizador</item>
+        <item>Decoración</item>
+        <item>Comida</item>
+    </string-array>
+</resources>
